@@ -1,0 +1,27 @@
+{
+    "name": "bruno-canada/php-restclient-easytouse",
+    "type": "library",
+    "description": "PHP Rest API Client - Easy-to-Use",
+    "keywords": [
+        "ups",
+        "api",
+        "tracking"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Bruno",
+            "email": "brunobueno@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^5.5 || ^7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "EASYREST\\": "lib"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

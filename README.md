@@ -24,7 +24,7 @@
 
 <p>This PHP tool is tested and working just fine. It makes your life really easy to connect and process information to a REST API with no extra packages or libraries.</p>
 
-<p>It was created as an coding exercise applying Inheritance OOP (Object-oriented programming) and design pattern Singleton. It uses CURL to handle all the processes.</p>
+<p>It was created as a coding exercise applying Inheritance OOP (Object-oriented programming) and design pattern Singleton. It uses CURL to handle all the processes.</p>
 
 ## 🏁 Getting Started <a name = "getting_started"></a>
 
