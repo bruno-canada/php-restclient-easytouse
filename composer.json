@@ -3,9 +3,10 @@
     "type": "library",
     "description": "PHP Rest API Client - Easy-to-Use",
     "keywords": [
-        "ups",
+        "rest",
+        "restful",
         "api",
-        "tracking"
+        "api client"
     ],
     "license": "MIT",
     "authors": [
