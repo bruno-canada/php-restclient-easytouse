@@ -19,7 +19,7 @@
     },
     "autoload": {
         "psr-4": {
-            "EASYREST\\": "lib"
+            "EASYREST\\": "src"
         }
     },
     "minimum-stability": "dev",
