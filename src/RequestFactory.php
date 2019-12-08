@@ -23,6 +23,15 @@ class RequestFactory
      */
     public $debug = 0;
 
+    /**
+     * Build information structure to send request
+     *
+     * @param string $method
+     * @param string $endpoint
+     * @param array $header
+     * @param array $parameters
+     * @return string It can be simple string or JSON
+     */
     protected function buildRequest(string $method, string $endpoint, array $header, array $parameters = NULL)
     {
         $this->method = $method;
@@ -43,12 +52,22 @@ class RequestFactory
         return $this->processRequest();
     }
 
+    /**
+     * Execute request method
+     *
+     * @return HTTP response
+     */
     private function processRequest()
     {
         $this->HTTPRequest();
         return $this->HTTPResponse();
     }
 
+    /**
+     * Process actual HTTP request via CURL
+     *
+     * @return void
+     */
     private function HTTPRequest()
     {
 
@@ -89,6 +108,11 @@ class RequestFactory
         curl_close($ch);
     }
 
+    /**
+     * HTTP API response handler
+     *
+     * @return HTTP response
+     */
     private function HTTPResponse()
     {
         if (empty($this->response)) {
@@ -98,6 +122,13 @@ class RequestFactory
         return $this->response;
     }
 
+    /**
+     * IF debug is enabled, print response and verbose
+     *
+     * @param string $response
+     * @param string $verboseLog
+     * @return string Response and CURL verbose
+     */
     private function DebugLog(string $response,string $verboseLog)
     {
         echo "Response: ".$response." \r\n Verbose: ".$verboseLog;
