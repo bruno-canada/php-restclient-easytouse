@@ -62,3 +62,4 @@ try {
 ## ⛏️ Built Using <a name = "built_using"></a>
 
 - [PHP] (https://www.php.net/) PHP
+- [CURL] (https://curl.haxx.se/) Transfering Data via CURL
