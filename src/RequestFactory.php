@@ -32,7 +32,7 @@ class RequestFactory
      * @param array $parameters
      * @return string It can be simple string or JSON
      */
-    protected function buildRequest(string $method, string $endpoint, array $header, array $parameters = NULL)
+    protected function buildRequest(string $method, string $endpoint, array $header, array $parameters = [])
     {
         $this->method = $method;
         $this->endpoint = $endpoint;

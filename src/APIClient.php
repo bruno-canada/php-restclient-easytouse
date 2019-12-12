@@ -15,7 +15,7 @@ class APIClient extends RequestFactory
     public $debug;
 
     /**
-     * Singleton pattern 
+     * Singleton pattern
      */
     private function __construct()
     { }
@@ -28,7 +28,7 @@ class APIClient extends RequestFactory
      * @param array $parameters
      * @return string raw API response
      */
-    public static function get(string $endpoint, array $header, array $parameters = NULL)
+    public static function get(string $endpoint, array $header=[], array $parameters = [])
     {
 
         return APIClient::getInstance()->buildRequest("GET", $endpoint, $header, $parameters);
@@ -43,7 +43,7 @@ class APIClient extends RequestFactory
      * @return string raw API response
      */
 
-    public static function post(string $endpoint, array $header, array $parameters = NULL)
+    public static function post(string $endpoint, array $header, array $parameters = [])
     {
         return APIClient::getInstance()->buildRequest("POST", $endpoint, $header, $parameters);
     }
@@ -56,7 +56,7 @@ class APIClient extends RequestFactory
      * @param array $parameters
      * @return string raw API response
      */
-    public static function put(string $endpoint, array $header, array $parameters = NULL)
+    public static function put(string $endpoint, array $header, array $parameters = [])
     {
         return APIClient::getInstance()->buildRequest("PUT", $endpoint, $header, $parameters);
     }
