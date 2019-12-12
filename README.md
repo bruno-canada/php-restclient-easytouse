@@ -45,12 +45,15 @@ CURL mod enabled
 
 ## 🎈 Usage <a name="usage"></a>
 
-Check the file "testing.php" as a real and working sample for you.
+Check the file "testing.php" or a real ready-to-use example below:
 
 ```shell
+$endpointRoot = "https://restcountries.eu/rest/v2/";
+$endpoint = $endpointRoot . "name/brazil";
+
 try {
 
-    $getSales = EASYREST\APIClient::get($endpoint, $header, $parameters);
+    $getSales = EASYREST\APIClient::get($endpoint);
     print_r($getSales);
 
 } catch (\Exception $e) {
